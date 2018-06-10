@@ -14,10 +14,10 @@ The followings are PyTorch models converted from [Caffe models](https://www.robo
 
 |arch_type|download link|
 | :--- | :---: |
-|`resnet50_ft`|[link(preparing)](.pkl)|
-|`senet50_ft`|[link(preparing)](.pkl)|
-|`resnet50_scratch`|[link(preparing)](.pkl)|
-|`senet50_scratch`|[link(preparing)](.pkl)|
+|`resnet50_ft`|[link](https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB_s0SzEhAFU)|
+|`senet50_ft`|[link](https://drive.google.com/open?id=1YtAtL7Amsm-fZoPQGF4hJBC9ijjjwiMk)|
+|`resnet50_scratch`|[link](https://drive.google.com/open?id=1gy9OJlVfBulWkIEnZhGpOLu084RgHw39)|
+|`senet50_scratch`|[link](https://drive.google.com/open?id=11Xo4tKir1KF8GdaTCMSbEQ9N4LhshJNP)|
 
 ### Extracting features
 
@@ -99,7 +99,7 @@ python demo.py train <options>
 
 ## Note
 
-VGG-Face dataset, described in [1] is not planned to be supported in this repo.
+VGG-Face dataset, described in [2], is not planned to be supported in this repo.
 If you are interested in models for VGG-Face, see [keras-vggface](https://github.com/rcmalli/keras-vggface).
 
 ## References

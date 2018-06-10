@@ -91,7 +91,6 @@ def main():
     root = args.dataset_dir
     train_img_list_file = args.train_img_list_file
     test_img_list_file = args.test_img_list_file
-    # extract_img_list_file = args.extract_img_list_file
 
     kwargs = {'num_workers': args.workers, 'pin_memory': True} if cuda else {}
 
