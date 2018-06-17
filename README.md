@@ -1,12 +1,23 @@
 ## PyTorch Face Recognizer based on 'VGGFace2: A dataset for recognising faces across pose and age'.
 
 This repo implements training and testing models, and feature extractor based on models for VGGFace2 [1].
-Pretrained models for PyTorch are converted from [Caffe models](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/) 
+
+[Pretrained models](#pretrained-models) for PyTorch are converted from [Caffe models](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/) 
 authors of [1] provide.
 
 ### Dataset
 
 To download VGGFace2 dataset, see [authors' site](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/).
+
+### Preprocessing images
+
+Faces should be detected and cropped from images before face images are fed to this face recognizer(`demo.py`).
+
+There are several face detection programs based on MTCNN [3].
+
+* PyTorch version: [mtcnn-pytorch](https://github.com/TropComplique/mtcnn-pytorch)
+* MXNet version: [mxnet_mtcnn_face_detection](https://github.com/pangyupo/mxnet_mtcnn_face_detection)
+* Matlab version: [MTCNN_face_detection_alignment](https://github.com/kpzhang93/MTCNN_face_detection_alignment)
 
 ### Pretrained models
 
@@ -105,9 +116,14 @@ If you are interested in models for VGG-Face, see [keras-vggface](https://github
 ## References
 
 1. ZQ. Cao, L. Shen, W. Xie, O. M. Parkhi, A. Zisserman,
-    VGGFace2: A dataset for recognising faces across pose and age.   
+    VGGFace2: A dataset for recognising faces across pose and age, 2018.   
     [site](https://www.robots.ox.ac.uk/~vgg/data/vgg_face2/), [arXiv](https://arxiv.org/abs/1710.08092)
     
 2. Parkhi, O. M. and Vedaldi, A. and Zisserman, A.,
-    Deep Face Recognition.   
+    Deep Face Recognition, British Machine Vision Conference, 2015.
     [site](http://www.robots.ox.ac.uk/~vgg/software/vgg_face/)
+    
+3. K. Zhang and Z. Zhang and Z. Li and Y. Qiao,
+   Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks,
+   IEEE Signal Processing Letters, 2016. 
+   [arXiv](https://arxiv.org/abs/1604.02878)
